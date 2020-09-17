@@ -6,13 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CIS_420_Project.Areas.Students.Controllers
 {
-    public class HomeController : Controller
+    public class GraduateController : Controller
     {
         [Area("Students")]
         public IActionResult Main()
         {
-            string blep = "Aaron";
-            string blep1 = "TayTay";
             return View();
         }
 

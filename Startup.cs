@@ -49,7 +49,7 @@ namespace CIS_420_Project
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                name: "Students",
+                name: "Area",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
                 endpoints.MapControllerRoute(

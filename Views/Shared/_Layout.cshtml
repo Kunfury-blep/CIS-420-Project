@@ -32,14 +32,14 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" id="studentDropdown" role="button" data-toggle="dropdown" asp-area="Students" asp-controller="Home" asp-action="Main">Students</a>
+                            <a class="nav-link dropdown-toggle text-light" id="studentDropdown" role="button" data-toggle="dropdown" >Students</a>
                             <div class="dropdown-menu" aria-labelledby="studentDropdown">
-                                <a class="dropdown-item" href="#">Home</a>
-                                <a class="dropdown-item" href="#">Iris</a>
-                                <a class="dropdown-item" href="#">Undergraduate</a>
-                                <a class="dropdown-item" href="#">Graduate</a>
-                                <a class="dropdown-item" href="#">Student Involvement</a>
-                                <a class="dropdown-item" href="#">Research Opportunitiess</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "Home", new { area = "Students" })">Home</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "Iris", new { area = "Students" })">Iris</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "Undergraduate", new { area = "Students" })">Undergraduate</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "Graduate", new { area = "Students" })">Graduate</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "StudentInvolvement", new { area = "Students" })">Student Involvement</a>
+                                <a class="dropdown-item" href="@Url.Action("Main", "ResearchOpportunities", new { area = "Students" })">Research Opportunitiess</a>
                             </div>
                         </li>
                         <li class="nav-item">
