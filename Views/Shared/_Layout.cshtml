@@ -34,12 +34,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" id="studentDropdown" role="button" data-toggle="dropdown" >Students</a>
                             <div class="dropdown-menu" aria-labelledby="studentDropdown">
-                                <a class="dropdown-item" href="@Url.Action("Main", "Home", new { area = "Students" })">Home</a>
-                                <a class="dropdown-item" href="@Url.Action("Main", "Iris", new { area = "Students" })">Iris</a>
-                                <a class="dropdown-item" href="@Url.Action("Main", "Undergraduate", new { area = "Students" })">Undergraduate</a>
-                                <a class="dropdown-item" href="@Url.Action("Main", "Graduate", new { area = "Students" })">Graduate</a>
-                                <a class="dropdown-item" href="@Url.Action("Main", "StudentInvolvement", new { area = "Students" })">Student Involvement</a>
-                                <a class="dropdown-item" href="@Url.Action("Main", "ResearchOpportunities", new { area = "Students" })">Research Opportunitiess</a>
+                                <a class="dropdown-item" title="Student Homepage" href="@Url.Action("Main", "Home", new { area = "Students" })">Home</a>
+                                <a class="dropdown-item" title="Student Iris" href="@Url.Action("Main", "Iris", new { area = "Students" })">Iris</a>
+                                <a class="dropdown-item" title="Student Undergraduate" href="@Url.Action("Main", "Undergraduate", new { area = "Students" })">Undergraduate</a>
+                                <a class="dropdown-item" title="Student Graduate" href="@Url.Action("Main", "Graduate", new { area = "Students" })">Graduate</a>
+                                <a class="dropdown-item" title="Student Involvement" href="@Url.Action("Main", "StudentInvolvement", new { area = "Students" })">Student Involvement</a>
+                                <a class="dropdown-item" title="Student Research Opportunities" href="@Url.Action("Main", "ResearchOpportunities", new { area = "Students" })">Research Opportunitiess</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -55,7 +55,7 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Support</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">About</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Help</a>
                         </li>
                     </ul>
                 </div>
