@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CIS_420_Project.Areas.Students.Controllers
+namespace CIS_420_Project.Areas.Researchers.Controllers
 {
     public class HomeController : Controller
     {
