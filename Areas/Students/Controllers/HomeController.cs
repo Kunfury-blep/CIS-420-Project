@@ -11,8 +11,7 @@ namespace CIS_420_Project.Areas.Students.Controllers
         [Area("Students")]
         public IActionResult Main()
         {
-            string blep = "Aaron";
-            string blep1 = "TayTay";
+            
             return View();
         }
 
