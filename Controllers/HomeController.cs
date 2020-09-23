@@ -18,17 +18,17 @@ namespace CIS_420_Project.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
+        public IActionResult Main()
         {
             return View();
         }
 
         public IActionResult Calendar()
+        {
+            return View();
+        }
+
+        public IActionResult UpcomingEvents()
         {
             return View();
         }

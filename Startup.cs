@@ -50,11 +50,11 @@ namespace CIS_420_Project
             {
                 endpoints.MapControllerRoute(
                 name: "Area",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                pattern: "{area:exists}/{controller=Home}/{action=Main}/{id?}");
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Main}/{id?}");
             });
 
         }

@@ -11,8 +11,6 @@ namespace CIS_420_Project.Areas.Researchers.Controllers
         [Area("Researchers")]
         public IActionResult Main()
         {
-            string blep = "Aaron";
-            string blep1 = "TayTay";
             return View();
         }
     }

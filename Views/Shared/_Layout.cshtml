@@ -1,4 +1,29 @@
-﻿<!DOCTYPE html>
+﻿<style type="text/css">
+    /* ============ desktop view ============ */
+    @@media all and (min-width: 992px) {
+        .navbar .nav-item .dropdown-menu {
+            display: none;
+        }
+
+        .navbar .nav-item:hover .nav-link {
+            color: #fff;
+        }
+
+        .navbar .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+        .navbar .nav-item .dropdown-menu {
+            margin-top: 0;
+        }
+    }
+    /* ============ desktop view .end// ============ */
+
+
+</style>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -14,25 +39,11 @@
     As well as ensuring every page has access to the same CSS
 *@
 
-<style type="text/css">
-/* ============ desktop view ============ */
-@@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}
-/* ============ desktop view .end// ============ */
-
-
-</style>
-
-
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: darkred;">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Main">
                     <img src="~/Images/main_logo.png" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -41,35 +52,68 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+
+                        @* Home Dropdown *@
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" id="studentDropdown" role="button" data-toggle="dropdown" >Students</a>
+                            <a class="nav-link dropdown-toggle text-light" id="homeDropdown" role="button" data-toggle="dropdown">Home</a>
+                            <div class="dropdown-menu" aria-labelledby="homeDropdown">
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Home")">Home</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Calendar", "Home")">Calendar</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("UpcomingEvents", "Home")">Upcoming Events</a>
+                            </div>
+                        </li>
+
+                        @* Student Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="studentDropdown" role="button" data-toggle="dropdown">Students</a>
                             <div class="dropdown-menu" aria-labelledby="studentDropdown">
                                 <a class="dropdown-item" title="Student Homepage" href="@Url.Action("Main", "Home", new { area = "Students" })">Home</a>
-                                <a class="dropdown-item" title="Student Iris" href="@Url.Action("Main", "Iris", new { area = "Students" })">Iris</a>
                                 <a class="dropdown-item" title="Student Undergraduate" href="@Url.Action("Main", "Undergraduate", new { area = "Students" })">Undergraduate</a>
                                 <a class="dropdown-item" title="Student Graduate" href="@Url.Action("Main", "Graduate", new { area = "Students" })">Graduate</a>
                                 <a class="dropdown-item" title="Student Involvement" href="@Url.Action("Main", "StudentInvolvement", new { area = "Students" })">Student Involvement</a>
-                                <a class="dropdown-item" title="Student Research Opportunities" href="@Url.Action("Main", "ResearchOpportunities", new { area = "Students" })">Research Opportunitiess</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Industry</a>
+
+                        @* Researcher Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="researcherDropdown" role="button" data-toggle="dropdown">Researcher</a>
+                            <div class="dropdown-menu" aria-labelledby="researcherDropdown">
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Home", new { area = "Researchers" })">Home</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Forms", new { area = "Researchers" })">Forms</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Funding", new { area = "Researchers" })">Funding</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Institute", new { area = "Researchers" })">Institute</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Researchers</a>
+
+                        @* Community Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="researcherDropdown" role="button" data-toggle="dropdown">Community</a>
+                            <div class="dropdown-menu" aria-labelledby="researcherDropdown">
+                                <a class="dropdown-item" title="Community Homepage" href="@Url.Action("Main", "Home", new { area = "Community" })">Home</a>
+                                <a class="dropdown-item" title="Community Compliance" href="@Url.Action("Main", "Compliance", new { area = "Community" })">Compliance</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Community</a>
+
+                        @* About Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="aboutDropdown" role="button" data-toggle="dropdown">About</a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" title="Staff and Faculty" href="@Url.Action("Main", "StaffAndFaculty", new { area = "About" })">Staff and Faculty</a>
+                                <a class="dropdown-item" title="Policies" href="@Url.Action("Main", "Policies", new { area = "About" })">Policies</a>
+                                <a class="dropdown-item" title="Office Location" href="@Url.Action("Main", "OfficeLocation", new { area = "About" })">Office Location</a>
+                                <a class="dropdown-item" title="Mission Statement" href="@Url.Action("Main", "MissionStatement", new { area = "About" })">Mission Statement</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Support</a>
+
+                        @* Help Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="helpDropdown" role="button" data-toggle="dropdown">Help</a>
+                            <div class="dropdown-menu" aria-labelledby="helpDropdown">
+                                <a class="dropdown-item" title="Support" href="@Url.Action("Main", "Support", new { area = "Help" })">Support</a>
+                                <a class="dropdown-item" title="FAQ" href="@Url.Action("Main", "FAQ", new { area = "Help" })">FAQ</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Help</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>

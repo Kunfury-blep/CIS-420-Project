@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Home\Models\" />
     <Folder Include="wwwroot\Videos\" />
   </ItemGroup>
 
