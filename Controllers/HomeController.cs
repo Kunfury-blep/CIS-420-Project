@@ -28,7 +28,7 @@ namespace CIS_420_Project.Controllers
             return View();
         }
 
-        public IActionResult UpcomingEvents()
+        public IActionResult News()
         {
             return View();
         }

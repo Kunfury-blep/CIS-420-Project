@@ -41,10 +41,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: darkred;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: black;">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Main">
-                    <img src="~/Images/main_logo.png" />
+                    <img src="~/Images/Black_and_White_logo.png" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,7 @@
                             <div class="dropdown-menu" aria-labelledby="homeDropdown">
                                 <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Home")">Home</a>
                                 <a class="dropdown-item" title="Homepage" href="@Url.Action("Calendar", "Home")">Calendar</a>
-                                <a class="dropdown-item" title="Homepage" href="@Url.Action("UpcomingEvents", "Home")">Upcoming Events</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("News", "Home")">News</a>
                             </div>
                         </li>
 
@@ -126,7 +126,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container" style=" color:white;">
             &copy; 2020 - CIS_420_Project - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
