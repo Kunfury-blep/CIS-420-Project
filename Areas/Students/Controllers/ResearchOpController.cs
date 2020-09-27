@@ -4,14 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CIS_420_Project.Areas.Home.Controllers
+namespace CIS_420_Project.Areas.About.Controllers
 {
-    public class HomeController : Controller
+    public class ResearchOpController : Controller
     {
-        [Area("Students")]
+        [Area("About")]
         public IActionResult Main()
         {
-
+            
             return View();
         }
 
