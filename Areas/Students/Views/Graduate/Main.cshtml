@@ -3,13 +3,43 @@
     ViewData["Title"] = "Graduate";
 }
 
-@{ 
-    int i = 2 + 2;
-
-
-}
-
 
 <h1>Graduate</h1>
 
-<p>I is equal to @i</p>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+    }
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+
+<div class="row">
+    <div class="column" style="background-color:#aaa;">University of Louisville Scholar publication database</div>
+    <div class="column" style="background-color:#bbb;">UofL School of Interdisciplinary and Graduate Studies</div>
+    <div class="column" style="background-color:#ccc;">UofL Schools and Departments</div>
+</div>
+
