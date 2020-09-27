@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CIS_420_Project.Areas.About.Controllers
 {
-    public class PoliciesController : Controller
+    public class PolciesController : Controller
     {
         [Area("About")]
         public IActionResult Main()
