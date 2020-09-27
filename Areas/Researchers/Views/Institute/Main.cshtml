@@ -3,5 +3,73 @@
     ViewData["Title"] = "Institute";
 }
 
-<h1>Institute</h1>
+<h1 style="color: white">Institutes</h1>
+<style>
+    body {
+        color: black;
+    }
 
+    .col-12 {
+        color: rgb(139, 157, 161);
+    }
+    .card-header{
+        color: black;
+    }
+    .d-block{
+        color: black;
+    }
+</style>
+
+<div id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="card">
+        <h5 class="card-header" role="tab" id="headingOne">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block">
+                <i class="fa fa-chevron-down pull-right"></i> AMIST: Additive Manufacturing Institute of Science & Technology
+
+            </a>
+        </h5>
+
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body">
+                With 10+ affiliated faculty from engineering, medicine and dentistry the AMIST supports and promotes
+                the broad range of additive manufacturing (AM) research activities at the University of Louisville.
+                faculty research is funded by industry and multiple federal agencies, including DoD (Navy, Air Force and Army), NASA and NSF.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h5 class="card-header" role="tab" id="headingTwo">
+            <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fa fa-chevron-down pull-right"></i>  BCC: Brown Cancer Center
+            </a>
+        </h5>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-body">
+                The mission of the James Graham Brown Cancer Center is to generate new knowledge relating to
+                the nature of cancer, and to create new and more effective approaches to prevention, diagnosis
+                and therapy, while delivering medical advances with compassion and respect to cancer patients throughout our region.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h5 class="card-header" role="tab" id="headingThree">
+            <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fa fa-chevron-down pull-right"></i>  CHHP: Center for Health Hazards Preparedness
+            </a>
+        </h5>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-body">
+
+                The Center for Health Hazards Preparedness is a nationally-recognized center of excellence in
+                coordinating research, education and service to improve the local, regional and national response
+                to potential acts of terrorism, natural disasters and infectious diseases.
+                <br>
+
+                <br />
+                By defining competencies, disseminating best practices and offering virtual drills and exercises,
+                communities will be strengthened as their health care workers and administration are prepared to
+                appropriately assess and respond to a variety of public health hazards.
+            </div>
+        </div>
+    </div>
+</div>
