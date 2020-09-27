@@ -1,4 +1,4 @@
-
+﻿
 @{
     ViewData["Title"] = "Main";
 }
@@ -11,6 +11,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
+@*<style>
+  /*  .card-img-top {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }*/
+
+    .container-fluid {
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+    }
+
+    .nav-link {
+        color: whitesmoke;
+        font-size: larger;
+    }
+
+    .bg-primary {
+        background-color: rgb(243, 243, 243) !important;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card {
+        height: auto;
+        background-color: #ececec;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .facts-figures-single {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .event-link {
+        border-bottom: 5px solid #AD0000;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+
+    h6 {
+        font-weight: bolder;
+        border-bottom: 1px dashed #AD0000;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    h1 {
+        font-size: 58px;
+        color: whitesmoke;
+        margin-top: 10px;
+        margin-bottom: -10px;
+        margin-left: 15px;
+    }
+</style>*@
 
 <head>
 
@@ -22,169 +84,124 @@
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="site.css">
 
 </head>
 
+<style>
+    body {
+    color: black;
+    }
+    .col-12 {
+        color: rgb(139, 157, 161)
+       : 
+    }
+
+</style>
+<body>
 <!-- Pages -->
+    <h1> Researchers</h1>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div class="row">
-                <div class="col-6" style="margin-left: -15px;">
-                    <div class="card" style="width: 100%; margin-bottom: 8px;">
-                        <!--Big News-->
-                        <div class="card-body">
-                            <h5 class="card-title" style="font-size:xx-large; text-align: left; ">Researchers</h5>
-                            <p class="card-text">Information updates regarding researchers</p>
-                            <p class="card-text">Information updates regarding researchers</p>
-                            <p class="card-text">Information updates regarding researchers</p>
-                            <p class="card-text">Information updates regarding researchers</p>
-                            <a href="#" class="btn btn-primary">iRIS Login</a>
-                        </div>
-                    </div>
-                </div>-->
-                <div class="col-2">
-                    <div class="card" style="height: 350px; margin-bottom: 8px; margin-left: -50px; margin-right: 50px;  height: 288px;">
-                        <!--Big News-->
-                        <div class="card-body">
-                            <!--<img src="Images/join InNet.jpg" alt="Research" class="" title="InNet Portal" style="display:block; margin-left: 50rem; border-radius: 25px;">-->
-                            <h5 class="card-title" style="font-size:x-large; text-align: left;">External Tools</h5>
-                            <p>Connect with Researchers</br><a href="#"><img src="Images/join InNet.jpg" alt="Research" class="" title="InNet Portal" style="display:block; margin-top: 5px;  margin-left: 4.5rem; position: center; border-radius: 25px; margin-bottom: 20px;"></a></p>
-                            <p> Cloud Tools for Researchers </br><a href="#"><img src="Images/cloudtools.jpg" alt="Cloud" class="" title="InNet Portal" style="margin-top: 5px; margin-left: 3.6rem; border-radius: 25px; height: 75px;"></a></p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-6">
-                        <!--Medium News-->
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title" style="font-size:xx-large;">Project Updates</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-2">
-                        <!--Quick Links-->
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body, facts-figures-single">
-                                <h5 class="card-title" style="font-size:xx-large;">Quick Links</h5>
-                                <br>
-                                <a href=#>
-                                    <p class="card-text">Important Link #1</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Important Link #2</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Important Link #3</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Important Link #4</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <!--Grant Statistics-->
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body, facts-figures-single">
-                                <h5 class="card-title" style="font-size:xx-large;">Researcher Events</h5>
-                                <a href=#>
-                                    <p class="card-text">Researcher Event Link</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Researcher Event Link</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Researcher Event Link</p>
-                                    <br>
-                                </a>
-                                <a href=#>
-                                    <p class="card-text">Researcher Event Link</p>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-
-
+            <div class="card" style="width: 100%; margin-bottom: 8px;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size:xx-large;">Quick Links</h5>
+                    <p class="card-text">Information updates regarding researchers</p>
+                    <p class="card-text">Information updates regarding researchers</p>
+                    <p class="card-text">Information updates regarding researchers</p>
+                    <p class="card-text">Information updates regarding researchers</p>
+                    <a href="#" class="btn btn-secondary">iRIS Login</a>
                 </div>
             </div>
-            <!-- <div class="col-2">
-               <div class="row"> <!--Iris Portal
-                 <div class="card" style="width: 100%;">
-                   <div class="card-body">
-                     <h5 class="card-title">Iris Portal</h5>
-                     <Span></Span>
-                   </div>
-                 </div>
-               </div>
-               <br>
-               <div class="row"> <!--Connect With Us
-                 <div class="card" style="width: 100%;">
-                   <div class="card-body">
-                     <h5 class="card-title">Connect With Us</h5>
-                     <div style="text-align: center; letter-spacing: 5px">
-                       <img src="Images/facebook.png" alt="Facebook" class="image-inline" title="Facebook">
-                       <img src="Images/ln30.png" alt="LinkedIn" class="image-inline" title="LinkedIn">
-                       <img src="Images/Twitter.png" alt="Twitter" class="image-inline" title="Twitter">
-                     </div>
-                     <br>
-                     <h5 class="card-title">Twitter Feed</h5>
-                     <div style="text-align: center; letter-spacing: 5px">
-                       <img src="Images/twitter_block.png" style="width:100%" alt="twitter_block" class="image-inline" title="twitter_block">
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <br>
-               <div class="row"> <!--Events
-                   <div class="card" style="width: 100%;">
-                     <div class="card-body, facts-figures-single">
-                       <h5 class="card-title" style="font-size:xx-large;">Events</h5>
-                       <div class="event-link">
-                         <a href="#">
-                           <h6>February 4th, 2020</h6>
-                           <p class="card-text">Research Opportunity</p>
-                         </a>
-                       </div>
-                       <div class="event-link">
-                         <a href="#">
-                           <h6>February 4th, 2020</h6>
-                           <p class="card-text">Research Opportunity</p>
-                         </a>
-                       </div>
-                       <div class="event-link">
-                         <a href="#">
-                           <h6>February 4th, 2020</h6>
-                           <p class="card-text">Research Opportunity</p>
-                         </a>
-                       </div>
-                       <div class="event-link">
-                         <a href="#">
-                           <h6>February 4th, 2020</h6>
-                           <p class="card-text">Research Opportunity</p>
-                         </a>
-                       </div>
-                     </div>
-                   </div>
-               </div>-->
+        </div>-->
 
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-size:xx-large;">Project Updates</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-secondary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+
+
+
+            </div>
         </div>
+        <!-- <div class="col-2">
+       <div class="row"> <!--Iris Portal
+         <div class="card" style="width: 100%;">
+           <div class="card-body">
+             <h5 class="card-title">Iris Portal</h5>
+             <Span></Span>
+           </div>
+         </div>
+       </div>
+       <br>
+       <div class="row"> <!--Connect With Us
+         <div class="card" style="width: 100%;">
+           <div class="card-body">
+             <h5 class="card-title">Connect With Us</h5>
+             <div style="text-align: center; letter-spacing: 5px">
+               <img src="Images/facebook.png" alt="Facebook" class="image-inline" title="Facebook">
+               <img src="Images/ln30.png" alt="LinkedIn" class="image-inline" title="LinkedIn">
+               <img src="Images/Twitter.png" alt="Twitter" class="image-inline" title="Twitter">
+             </div>
+             <br>
+             <h5 class="card-title">Twitter Feed</h5>
+             <div style="text-align: center; letter-spacing: 5px">
+               <img src="Images/twitter_block.png" style="width:100%" alt="twitter_block" class="image-inline" title="twitter_block">
+             </div>
+           </div>
+         </div>
+       </div>
+       <br>
+       <div class="row"> <!--Events
+           <div class="card" style="width: 100%;">
+             <div class="card-body, facts-figures-single">
+               <h5 class="card-title" style="font-size:xx-large;">Events</h5>
+               <div class="event-link">
+                 <a href="#">
+                   <h6>February 4th, 2020</h6>
+                   <p class="card-text">Research Opportunity</p>
+                 </a>
+               </div>
+               <div class="event-link">
+                 <a href="#">
+                   <h6>February 4th, 2020</h6>
+                   <p class="card-text">Research Opportunity</p>
+                 </a>
+               </div>
+               <div class="event-link">
+                 <a href="#">
+                   <h6>February 4th, 2020</h6>
+                   <p class="card-text">Research Opportunity</p>
+                 </a>
+               </div>
+               <div class="event-link">
+                 <a href="#">
+                   <h6>February 4th, 2020</h6>
+                   <p class="card-text">Research Opportunity</p>
+                 </a>
+               </div>
+             </div>
+           </div>
+       </div>-->
+
+    </div>
 
     </div> <!--End of Row-->
 
