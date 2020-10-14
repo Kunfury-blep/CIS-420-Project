@@ -85,6 +85,18 @@
                             </div>
                         </li>
 
+                        @* Researcher Dropdown *@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="industryDropdown" role="button" data-toggle="dropdown">Industry</a>
+                            <div class="dropdown-menu" aria-labelledby="industryDropdown">
+                                <a class="dropdown-item" title="Industry Homepage" href="@Url.Action("Main", "Home", new { area = "Industry" })">Home</a>
+                                <a class="dropdown-item" title="Industry Funding Opportunities" href="@Url.Action("Main", "Funding", new { area = "Industry" })">Funding Opportunities</a>
+                                <a class="dropdown-item" title="Industry Research Cores" href="@Url.Action("Main", "ResearchCores", new { area = "Industry" })">Research Cores</a>
+                                <a class="dropdown-item" title="Industry Commercialization Support" href="@Url.Action("Main", "Commercialization", new { area = "Industry" })">Commercialization Support</a>
+                                <a class="dropdown-item" title="Industry Compliance" href="@Url.Action("Main", "Compliance", new { area = "Industry" })">Compliance</a>
+                            </div>
+                        </li>
+
                         @* Community Dropdown *@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" id="researcherDropdown" role="button" data-toggle="dropdown">Community</a>
