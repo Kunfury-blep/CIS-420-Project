@@ -26,6 +26,10 @@ a {
   color: white;
 }
 
+    a:hover {
+        color: #AD0000;
+    }
+
  a.btn {
         
         display: block;
@@ -117,6 +121,13 @@ hr.new1 {
     border: 2px solid white;
     border-radius: 1px;
 }
+
+.localist-widget {
+    color: black;
+    
+
+}
+
 
 /*Custom classes For Main Page*/
 .card.new1 {
