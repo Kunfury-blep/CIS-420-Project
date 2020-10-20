@@ -122,11 +122,29 @@ hr.new1 {
     border-radius: 1px;
 }
 
+/*Calendar Style*/
 .localist-widget {
     color: black;
-    
-
 }
+
+.localist_widget_container {
+    background-color: black !important;
+}
+
+.lw_event_item {
+    color: white;
+    background-color: black !important;
+}
+
+
+
+.localist_widget_container li a {
+    color: white;
+}
+
+    .localist_widget_container li a:hover {
+        color: #AD0000;
+    }
 
 
 /*Custom classes For Main Page*/
