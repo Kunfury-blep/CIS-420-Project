@@ -30,13 +30,13 @@ a {
         color: #AD0000;
     }
 
-    a.btn {
+ a.btn {
+        
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: initial;
-        
-    }
+        width:initial;
+        }
 
 
 .btn-danger {
@@ -122,43 +122,18 @@ hr.new1 {
     border-radius: 1px;
 }
 
-
-
-/*Calendar Style*/
 .localist-widget {
     color: black;
-  
     
 
 }
- .localist_widget_container{
-     background-color:black !important;
-
-
- }
-
-.lw_event_item {
-    color: white;
-    background-color: black !important;
-}
-
-
-
-.localist_widget_container li a {
-    color: white;
-}
-
-    .localist_widget_container li a:hover {
-        color: #AD0000;
-    }
-
-
 
 
 /*Custom classes For Main Page*/
 .card.new1 {
     background-color: black;
-    color: white;
+    color:white;
+    
 }
 
 
