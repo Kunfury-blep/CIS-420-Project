@@ -57,9 +57,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" id="homeDropdown" role="button" data-toggle="dropdown">Home</a>
                             <div class="dropdown-menu" aria-labelledby="homeDropdown">
-                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Home")">Home</a>
-                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Calendar", "Home")">Calendar</a>
-                                <a class="dropdown-item" title="Homepage" href="@Url.Action("News", "Home")">News</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Main", "Home", new { area = "" })">Home</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("Calendar", "Home", new { area = "" })">Calendar</a>
+                                <a class="dropdown-item" title="Homepage" href="@Url.Action("News", "Home", new { area = "" })">News</a>
                             </div>
                         </li>
 
