@@ -3,58 +3,111 @@
     ViewData["Title"] = "Student Home Page";
 }
 
-<h1>Students Home Page</h1>
+    ViewData["Title"] = "Main";
+}
+@{
+    Layout = "_Layout";
+}
+
+    <h1 style="color: white">Student Main Page</h1>
+
+<style>
+    body {
+        color: black;
+    }
+
+    .col-12 {
+        color: rgb(139, 157, 161);
+    }
+
+
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+
+    .btn-primary {
+        background-color: rgb(173, 0, 0);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: justify;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font: gotham-book;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="site.css">
+
+</head>
+
 
 <body>
+    <!-- Pages -->
+  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%">
+                    <img src="/images/student/studentinvolvement.png">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="card" style="width: 100%;">
                     <div class="card-body">
-                        <a href="#" class="btn btn-secondary">Go to My iRIS Portal</a>
+                        <h5 class="card-title" style="font-size:xx-large;">UofL iRIS</h5>
+                        <p class="card-text"> - Human Subjects Protection Program</p>
+                        <p class="card-text"></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Go to My iRIS Portal</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br />
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">UofL ThinkIR</h5>
+                        <p class="card-text">The University of Louisville's Institutional Repository</p>
+                        <p class="card-text">Browse Research and Scholarship</p>
+                        <p class="card-text">ThinkIR is an open-access collection of scholarly works created by the University of Louisville community.</p>
+                        <a href="#" class="btn btn-primary">Go to My ThinkIR Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+</html>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 600px; 
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-</style>
-
-<div class="row">
-    <div class="column" style="background-color:#bbb;color:black;">Student Carousel</div>
-    <div class="column" style="background-color:#ccc;color:black;">Links</div>
-</div>
 
 

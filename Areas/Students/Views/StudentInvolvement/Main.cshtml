@@ -3,41 +3,99 @@
     ViewData["Title"] = "Student Involvement";
 }
 
-<h1>Student Involvement</h1>
+<h1 style="color: white">Student Involvement</h1>
 
 <style>
-    * {
-        box-sizing: border-box;
-    }
-
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        color: black;
     }
 
-    .header {
-        background-color: #f1f1f1;
-        padding: 30px;
-        text-align: center;
-        font-size: 35px;
-    }
-
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        height: 300px;
+    .col-12 {
+        color: rgb(139, 157, 161);
     }
 
 
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
+
+
+    .btn-primary {
+        background-color: rgb(173, 0, 0);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: justify;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font: gotham-book;
+        margin-bottom: 5px;
     }
 </style>
 
-<div class="row">
-    <div class="column" style="background-color:#aaa;color:black;">Student Achievements</div>
-    <div class="column" style="background-color:#bbb;color:black;">Student Researches</div>
-    <div class="column" style="background-color:#ccc;color:black;">Student Pictures</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="site.css">
+
+</head>
+
+
+<body>
+    <!-- Pages -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%">
+                    <img src="/images/student/studentinvolvement.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">UofL Student Achievements</h5>
+                        <p class="card-text">August 2019 Undergraduate Summer Research Poster Session</p>
+                        <a href="#" class="btn btn-primary">Explore Student Achievements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">UofL Student Researches</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Explore UofL Student Researches</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
