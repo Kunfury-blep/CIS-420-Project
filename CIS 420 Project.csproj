@@ -16,7 +16,6 @@
     <Folder Include="wwwroot\Forms\" />
     <Folder Include="wwwroot\Images\About\Industry\" />
     <Folder Include="wwwroot\Videos\" />
-    <Folder Include="wwwroot\Images\Student\" />
   </ItemGroup>
 
 </Project>

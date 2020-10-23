@@ -11,6 +11,14 @@ for details on configuring this project to bundle and minify static web assets. 
 
 */
 
+/* Images*/
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 
 /*Nav style*/
@@ -39,9 +47,11 @@ a {
         }
 
 
-.btn-danger {
-    background-color: #AD0000 !important;
-}
+
+ 
+ /* button styles*/
+
+
 .btn-primary {
     background-color: #AD0000 !important;
     border: none;
@@ -68,6 +78,7 @@ a {
 body {
     background-color: black;
     color:white;
+    font-weight:bold;
        
 }
 
@@ -124,10 +135,20 @@ body {
 
 }
 
-/*Other style*/
+/*Header style*/
 
 h1{
     text-align:center;
+    font-weight:bold;
+}
+
+h5{
+    font-weight:bold;
+
+}
+
+h3 {
+    font-weight: bold;
 }
 
 hr.new1 {
@@ -160,6 +181,42 @@ hr.new1 {
     }
 
 
+
+.localist_widget_container li a {
+    color: white !important;
+    text-decoration: underline;
+}
+
+    .localist_widget_container li a:hover {
+        color: #AD0000;
+    }
+
+    .localist_widget_container li a:link {
+        color: #AD0000;
+        text-decoration:underline;
+    }
+
+.localist_widget_container .action_button a {
+    background-color: white !important;
+    color: black;
+}
+
+.localist_minicalendar_pager a {
+    background-color: #AD0000 !important;
+}
+
+.localist_minicalendar_page_heading h1 {
+    color: white !important;
+}
+
+.localist_minicalendar_minicalendar td a:hover {
+    background-color: #AD0000 !important;
+}
+
+
+
+
+
 /*Card styles*/
 .card.new1 {
     background-color: black;
@@ -171,6 +228,11 @@ hr.new1 {
 .card-body{
 
     font-weight:bold;
+}
+
+.boxed{
+
+    border:5px solid white;
 }
 
 
