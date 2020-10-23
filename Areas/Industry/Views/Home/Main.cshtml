@@ -3,58 +3,176 @@
     ViewData["Title"] = "Main";
 }
 
-<h1 alt="Main Page title" style="text-align:center"><strong><em>Industry Partner</em></strong></h1>
-<br />
-<br />
-<br />
-<br />
+<h1 style="color: white">Industry Main Page</h1>
 
-<h3 style="text-align:center" alt="Carousel Title"><strong><em>Collaborations</em></strong></h3>
-<hr class="new1" />
-<br />
-<br />
-<a href="https://mailchi.mp/louisville/newsletter-signup"> Sign up for UofL Newsletter </a>
-    <div class="row">
-        <div class="col-12">
+<style>
+    body {
+        color: black;
+    }
 
-            <!--Carousel Setup-->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    .col-12 {
+        color: rgb(139, 157, 161);
+    }
 
-                </ol>
-                <div class="carousel-inner">
 
-                    <!--Carousel Slider 1-->
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="~/Images/Industry/UofL.png" alt="First slide">
-                    </div>
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+    }
 
-                    <!--Carousel Slider 2-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Images/Industry/Brown Center.jpg" alt="Second slide">
-                    </div>
 
-                    <!--Carousel Slider3-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="~/Images/Industry/SBIR.jpg" alt="Third slide">
-                    </div>
+    .btn-primary {
+        background-color: rgb(173, 0, 0);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: justify;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font: gotham-book;
+    }
+   
+    .card-header {
+        color: black;
+    }
 
+    .d-block {
+        color: black;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="site.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%">
+                    <img src="/images/Industry/SBIR.jpg">
                 </div>
-
-                <!--Carousel Control-->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </div>
-    <br />
-    <br />
+    <a href="https://louisville.edu/research/innovation/industry" target="_blank" style="color:yellow; font-size:50px;">Click <<<<<<  Industry Request Form >>>>>> </a>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">Partnership</h5>
+                        <p class="card-text"> Uofl Research Center</p>
+                        <p class="card-text">Brown Center</p>
+                        <p class="card-text">SLRL</p>
+                        <p class="card-text">American Association of University Women</p>
+                        <a href="#" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">Funding Opportunities</h5>
+                        <p class="card-text">The University of Louisville's Institutional Repository</p>
+                        <p class="card-text"></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size:xx-large;">Private Funding Group</h5>
+                        <p class="card-text"><strong>Council on Foundations </strong>- Does not provide grants. Information here may be of interest to faculty and staff wishing to know more about private foundation funding.</p>
+                        <p class="card-text">
+                            <strong> The Foundation Center</strong> - The Foundation Center, now "Candid.org", is an independent nonprofit information clearinghouse established to foster
+                            public understanding of the foundation field by collecting, organizing, analyzing, and disseminating information on foundations, corporate giving, and related subjects.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">More Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 style="color:white;">Individual Private Agency Homepages</h3>
+
+
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+            <h5 class="card-header" role="tab" id="headingOne">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block">
+                    <i class="fa fa-chevron-down pull-right" color: black;></i> American Association of University Women
+
+                </a>
+            </h5>
+
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="card-body">
+                    A national organization that promotes education and equity for all women and girls.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" role="tab" id="headingTwo">
+                <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fa fa-chevron-down pull-right" color: black;></i>  American Cancer Society
+                </a>
+            </h5>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="card-body">
+                    Provides investigator-initiated and institutional grants for research and training related to the prevention and cure of cancer
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header" role="tab" id="headingThree">
+                <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa fa-chevron-down pull-right" color: black;></i>  American Chemical Society
+                </a>
+            </h5>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-body">
+
+                    Supports advanced scientific education and fundamental research in the "petroleum field," which may include any field of pure science that may afford a basis for subsequent applied research directly connected with petroleum.
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
