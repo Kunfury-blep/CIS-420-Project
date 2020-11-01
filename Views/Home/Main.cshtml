@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<CIS_420_Project.Models.Users>
 
 <title>Main Page</title>
 
@@ -15,6 +13,13 @@
     <br />
     <br />
     <br />
+
+    @foreach (var user in Model)
+    {
+        <span>@user.FirstName @user.LastName</span> <br />
+    }
+
+
 
     <!--Carousel Main title-->
     <h3 style="text-align:center" alt="Carousel Title"><em>Things You Should Know</em></strong></h3>
@@ -80,11 +85,11 @@
         <div class="col">
             <div class="card.new1">
                 <div class="card-body text-light">
-                    <h5 alt="Undergraduates"class="card-title"><strong>Undergraduates</strong></h5>
+                    <h5 alt="Undergraduates" class="card-title"><strong>Undergraduates</strong></h5>
                     <p class="card-text"> <a href="https://louisville.edu/research/students/undergrad-grad/internal" title="Research Opportunities">Research Opportunities at UofL</a> </p>
                     <p class="card-text"><a href="~/Documents/urs-application.docx" title="Application Document">Undergraduate Research Application</a> </p>
                     <p class="card-text"><a href="https://localhost:44359/Students/StudentInvolvement" title="Student Involvement">Student Involvement</a> </p>
-                    <a alt="button"href="https://louisville.edu/research/students/undergrad-grad" class="btn btn-primary" title="Undergraduates Portal">UnderGrad Portal</a>
+                    <a alt="button" href="https://louisville.edu/research/students/undergrad-grad" class="btn btn-primary" title="Undergraduates Portal">UnderGrad Portal</a>
                 </div>
             </div>
         </div>
@@ -99,18 +104,18 @@
                     <p class="card-text"><a href="https://louisville.edu/artsandsciences/academics/departments" title="UofL Schools and Departments">UofL Schools and Departments</a></p>
                     <a href="~/Documents/Sponsored Account Request Form_2-14-2014.pdf" title="Sponsored Account Request Form PDF" class="btn btn-primary">Sponsored Account Request</a>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <!--Assistance Column-->
         <div class="col">
             <div class="card.new1">
                 <div class="card-body text-light">
-                    <h5 alt="Assistance"class="card-title"><strong>Assistiance</strong></h5>
+                    <h5 alt="Assistance" class="card-title"><strong>Assistiance</strong></h5>
                     <p class="card-text"><a href="https://localhost:44359/About/Policies" title="Policies">University of Louisville Policies</a></p>
                     <p class="card-text"><a href="https://localhost:44359/Researchers/Forms" title="Forms">Forms</a></p>
                     <p class="card-text"><a href="http://louisville.edu/provost/ug-research" title="Provost Website">Requirements</a></p>
-                    <a alt="button"href="https://localhost:44359/Students" title="Students Homepage" class="btn btn-primary">Learn More</a>
+                    <a alt="button" href="https://localhost:44359/Students" title="Students Homepage" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -157,7 +162,7 @@
                     <h5 class="card-title"><strong>Regulations</strong></h5>
                     <p class="card-text"><a href="~/Documents/CFR-2015-title2-vol1-subtitleA-chapII.pdf" title="Federal Regulations PDF"></a>Federal Regulations</p>
                     <p class="card-text"><a href="https://louisville.edu/policies/policies-and-procedures/pageholder/pol-intellectual-property" title="Intellectual Property Policy Website Page">Intellectual Property Policy</a></p>
-                    <p class="card-text"><a href="~/Documents/CHAPTER-ONE-general-information.pdf"title="Researchers Handbook PDF">Researcher's Handbook</a></p>
+                    <p class="card-text"><a href="~/Documents/CHAPTER-ONE-general-information.pdf" title="Researchers Handbook PDF">Researcher's Handbook</a></p>
                     <a href="https://louisville.edu/dehs" title="Training Website" class="btn btn-primary">Training</a>
                 </div>
             </div>
@@ -178,7 +183,7 @@
                 <div class="card-body text-light">
                     <h5 class="card-title"><strong>Collaboration</strong></h5>
                     <p class="card-text"><a href="https://louisville.flintbox.com/#technologies" title="Technologies">Technologies</a></p>
-                    <p class="card-text"><strong>Technology Transfer, Commercialization and Start-Ups:</strong> <a href="mailto: karenr.johnson@louisville.edu" title="Email Address" ><u><strong>Email Kristyn Singleton</strong></u></a></p>
+                    <p class="card-text"><strong>Technology Transfer, Commercialization and Start-Ups:</strong> <a href="mailto: karenr.johnson@louisville.edu" title="Email Address"><u><strong>Email Kristyn Singleton</strong></u></a></p>
                     <p class="card-text"><a href="https://louisville.edu/research/innovation/industry" title="Industry Request Form">Industry Request Form</a></p>
                     <a href="https://louisville.edu/research/epi-center" title="Commericalization EpiCenter Website" class="btn btn-primary">Commercialization EPI-Center</a>
                 </div>
@@ -221,34 +226,32 @@
     <br />
 
     <div class="row">-->
-        <!--Collaboration Column-->
-        <!--<div class="col">
-            <div class="card.new1">
-                <div class="card-body text-light">
-                    <h5 class="card-title"><strong>UofL Lead Intiatives</strong></h5>
-                    <p class="card-text">Primary School Programs</p>
-                    <p class="card-text"><a href="https://louisville.edu/codre/welcome" title="CODRE Website"><strong>Diversity Programs</strong></a></p>
-                    <p class="card-text">Community Support</p>
-                    <a href="#" class="btn btn-danger">Let's Build a Better Future</a>
-                </div>
+    <!--Collaboration Column-->
+    <!--<div class="col">
+        <div class="card.new1">
+            <div class="card-body text-light">
+                <h5 class="card-title"><strong>UofL Lead Intiatives</strong></h5>
+                <p class="card-text">Primary School Programs</p>
+                <p class="card-text"><a href="https://louisville.edu/codre/welcome" title="CODRE Website"><strong>Diversity Programs</strong></a></p>
+                <p class="card-text">Community Support</p>
+                <a href="#" class="btn btn-danger">Let's Build a Better Future</a>
             </div>
-        </div>-->
-
-        <!--Outreach Column-->
-        <!--<div class="col">
-            <div class="card.new1">
-                <div class="card-body text-light">
-                    <h5 class="card-title"><strong>Outreach</strong></h5>
-                    <p class="card-text"><a href="https://louisville.edu/medicine/outreach" title="Community Outreach and Engagement"><strong>Community Outreach</strong></a></p>
-                    <p class="card-text">Comunnity forms </p>
-                    <p class="card-text">More Information</p>
-                    <a href="#" class="btn btn-danger">Contact Us</a>
-                </div>
+        </div>
+    </div>-->
+    <!--Outreach Column-->
+    <!--<div class="col">
+        <div class="card.new1">
+            <div class="card-body text-light">
+                <h5 class="card-title"><strong>Outreach</strong></h5>
+                <p class="card-text"><a href="https://louisville.edu/medicine/outreach" title="Community Outreach and Engagement"><strong>Community Outreach</strong></a></p>
+                <p class="card-text">Comunnity forms </p>
+                <p class="card-text">More Information</p>
+                <a href="#" class="btn btn-danger">Contact Us</a>
             </div>
-        </div>-->
-
-        <!--Donations Column-->
-        <!--<div class="col">
+        </div>
+    </div>-->
+    <!--Donations Column-->
+    <!--<div class="col">
             <div class="card.new1">
                 <div class="card-body text-light">
                     <h5 class="card-title"><strong>Donations</strong></h5>
@@ -266,7 +269,7 @@
 
 
 
-    
+
 
 
 

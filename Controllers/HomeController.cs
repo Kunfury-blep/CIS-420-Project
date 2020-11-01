@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CIS_420_Project.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CIS_420_Project.Controllers
 {
     public class HomeController : Controller
     {
+        private ORI_WEB_NEWContext _db;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ORI_WEB_NEWContext context, ILogger<HomeController> logger)
         {
             _logger = logger;
+            _db = context;
         }
 
         public IActionResult Main()
         {
-            return View();
+            return View(_db.Users.ToList());
         }
 
         public IActionResult Calendar()
