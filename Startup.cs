@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CIS_420_Project.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CIS_420_Project
 {
@@ -24,6 +26,11 @@ namespace CIS_420_Project
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<DbContext, ORI_WEB_NEWContext>();
+
+            services.AddDbContext<ORI_WEB_NEWContext>(option =>
+            option.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

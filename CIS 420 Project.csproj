@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
@@ -15,6 +20,7 @@
     <Folder Include="Areas\Industry\Models\" />
     <Folder Include="wwwroot\Forms\" />
     <Folder Include="wwwroot\Images\About\Industry\" />
+    <Folder Include="wwwroot\Images\ArticleImages\" />
     <Folder Include="wwwroot\Videos\" />
   </ItemGroup>
 
