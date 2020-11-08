@@ -20,7 +20,7 @@ namespace CIS_420_Project.Controllers
 
         public IActionResult Main()
         {
-            return View();
+            return View(_db.Users.ToList());
         }
 
         public IActionResult Calendar()
