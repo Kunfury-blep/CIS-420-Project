@@ -47,6 +47,9 @@ namespace CIS_420_Project.Areas.Admin.Controllers
             {
                 try
                 {
+                    tblUsers.UserTypeId = (from t in _db.UserType
+                                           where t.UserTypeDesc == tblUsers.UserTypeId
+                                           select t.UserTypeId).FirstOrDefault();
                     _db.Users.Add(tblUsers);
                     _db.SaveChanges();
                     ViewBag.ConfirmationNotice = "Successfully Added User";
@@ -63,7 +66,13 @@ namespace CIS_420_Project.Areas.Admin.Controllers
 
         private ManagementViewModel VarSetup()
         {
-            var viewModel = new ManagementViewModel();
+            var viewModel = new ManagementViewModel()
+            {
+                userCollection = _db.Users.ToArray(),
+                articleCollection = _db.Articles.ToArray(),
+                userTypes = (from t in _db.UserType
+                             select t.UserTypeDesc).ToArray()
+            };
             return viewModel;
         }
 
