@@ -11,5 +11,8 @@ namespace CIS_420_Project.Areas.Admin.ViewModels
         public Users tblUsers { get; set; }
         public Articles tblArticles { get; set; }
 
+        public Users[] userCollection { get; set; }
+        public Articles[] articleCollection { get; set; }
+        public string[] userTypes { get; set; }
     }
 }
